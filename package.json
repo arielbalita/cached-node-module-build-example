@@ -5,8 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod  --base-href ./ && cp CNAME dist/CNAME",
-    "test": "ng test",
+    "build": "ng build --prod  --base-href ./ cp -a ./dist/. /dist",
+    "test": "ng test --watch=false",
     "lint": "ng lint --force",
     "e2e": "ng e2e"
   },
