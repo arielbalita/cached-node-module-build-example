@@ -5,6 +5,8 @@
 FROM node:10.15-alpine as node_cache
 WORKDIR /cache/
 COPY package.json .
+# Uncomment below if you're using .npmrc
+# COPY .npmrc .
 RUN npm prune 
 RUN npm install
 
